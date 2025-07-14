@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		7EBC2A9A2E24C26A0090F93B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC2A902E24C26A0090F93B /* AppDelegate.swift */; };
 		7EBC2A9B2E24C26A0090F93B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC2A972E24C26A0090F93B /* SceneDelegate.swift */; };
-		7EBC2A9C2E24C26A0090F93B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC2A982E24C26A0090F93B /* ViewController.swift */; };
+		7EBC2A9C2E24C26A0090F93B /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC2A982E24C26A0090F93B /* MainSearchViewController.swift */; };
 		7EBC2A9D2E24C26A0090F93B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC2A912E24C26A0090F93B /* Assets.xcassets */; };
 		7EBC2A9F2E24C26A0090F93B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EBC2A942E24C26A0090F93B /* LaunchScreen.storyboard */; };
 		7EBC2AA32E24C26F0090F93B /* SearchingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC2AA12E24C26F0090F93B /* SearchingTests.swift */; };
 		7EBC2AA72E24C2720090F93B /* SearchingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC2AA42E24C2720090F93B /* SearchingUITests.swift */; };
 		7EBC2AA82E24C2720090F93B /* SearchingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC2AA52E24C2720090F93B /* SearchingUITestsLaunchTests.swift */; };
+		7EBC2AAF2E24C7520090F93B /* MainSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC2AAE2E24C74C0090F93B /* MainSearchRouter.swift */; };
+		7EBC2AB12E24C75D0090F93B /* MainSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC2AB02E24C7550090F93B /* MainSearchPresenter.swift */; };
+		7EBC2AB32E24C7680090F93B /* MainSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBC2AB22E24C75F0090F93B /* MainSearchInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +46,13 @@
 		7EBC2A922E24C26A0090F93B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EBC2A932E24C26A0090F93B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EBC2A972E24C26A0090F93B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7EBC2A982E24C26A0090F93B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7EBC2A982E24C26A0090F93B /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
 		7EBC2AA12E24C26F0090F93B /* SearchingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingTests.swift; sourceTree = "<group>"; };
 		7EBC2AA42E24C2720090F93B /* SearchingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingUITests.swift; sourceTree = "<group>"; };
 		7EBC2AA52E24C2720090F93B /* SearchingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7EBC2AAE2E24C74C0090F93B /* MainSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchRouter.swift; sourceTree = "<group>"; };
+		7EBC2AB02E24C7550090F93B /* MainSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchPresenter.swift; sourceTree = "<group>"; };
+		7EBC2AB22E24C75F0090F93B /* MainSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +165,10 @@
 		7EBC2AAD2E24C6E20090F93B /* MainSearch */ = {
 			isa = PBXGroup;
 			children = (
-				7EBC2A982E24C26A0090F93B /* ViewController.swift */,
+				7EBC2AB22E24C75F0090F93B /* MainSearchInteractor.swift */,
+				7EBC2AB02E24C7550090F93B /* MainSearchPresenter.swift */,
+				7EBC2AAE2E24C74C0090F93B /* MainSearchRouter.swift */,
+				7EBC2A982E24C26A0090F93B /* MainSearchViewController.swift */,
 			);
 			path = MainSearch;
 			sourceTree = "<group>";
@@ -302,8 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EBC2A9A2E24C26A0090F93B /* AppDelegate.swift in Sources */,
+				7EBC2AAF2E24C7520090F93B /* MainSearchRouter.swift in Sources */,
+				7EBC2AB12E24C75D0090F93B /* MainSearchPresenter.swift in Sources */,
 				7EBC2A9B2E24C26A0090F93B /* SceneDelegate.swift in Sources */,
-				7EBC2A9C2E24C26A0090F93B /* ViewController.swift in Sources */,
+				7EBC2A9C2E24C26A0090F93B /* MainSearchViewController.swift in Sources */,
+				7EBC2AB32E24C7680090F93B /* MainSearchInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

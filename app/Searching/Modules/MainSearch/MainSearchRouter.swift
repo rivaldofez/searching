@@ -7,6 +7,18 @@
 
 import UIKit
 
+/// `MainSearchRouter` handles navigation and wiring for search module
+///
+/// This router is responsible for creating and connecting the View, Presenter, and Interactor
+/// to set up the module according to the VIPER architecture.
+///
+/// Example usage:
+/// ```swift
+/// let router = MainSearchRouter.start()
+/// let initialViewController = router.entryPoint
+/// ```
+///
+/// - Note: The `entryPoint` holds a reference to the configured `MainSearchViewController`.
 class MainSearchRouter {
     var entryPoint: MainSearchViewController?
     
